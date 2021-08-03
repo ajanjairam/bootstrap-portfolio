@@ -3,62 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajan Jairam</title>
-    <link rel = "icon" href = "./img/ajr_logo.png" type = "image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Ajan Jairam - About me</title>
+    <link rel = "icon" href = "./assets/img/ajr_logo.png" type = "image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 
 </head>
-<body>
+<body style="background-color: #6c757d;">
     <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-dark">
-            <div class="container">
-                <a href="/" class="navbar-brand text-light"><img src="./img/ajr_logo.svg" width="30" height="30" alt="AJR Logo" class="d-inline-block align-top bg-light rounded"> Ajan Jairam</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavBar">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-md">
+                <a href="/" class="navbar-brand"><img src="./assets/img/ajr_logo.svg" width="30" height="30" alt="AJR Logo" class="d-inline-block align-top bg-light rounded"> Ajan Jairam</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="myNavBar">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a href="#" class="nav-link text-light font-weight-bold">About</a>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link text-light dropdown-toggle" id="myNavBarDropDown" role="button" data-toggle="dropdown">Projects</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <p class="dropdown-header">Python</p>
-                                <a href="https://github.com/ajanjairam/bulk-renamer-python" target="_blank" class="dropdown-item">Bulk Renamer</a>
-                                <a href="#" class="dropdown-item">YT Downloader</a>
-                            </div>
+                            <a href="#" class="nav-link dropdown-toggle" id="myNavBarDropDown" role="button" data-bs-toggle="dropdown">Projects</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><p class="dropdown-header">Python</p></li>
+                                <li><a href="https://github.com/ajanjairam/bulk-renamer-python" target="_blank" class="dropdown-item">Bulk Renamer</a></li>
+                                <li><a href="#" class="dropdown-item disabled">YT Downloader</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><p class="dropdown-header">HTML</p></li>
+                                <li><a href="/" class="dropdown-item">About me</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-light">Contact</a>
+                            <a href="./resume.html" class="nav-link">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="content jumbotron mb-0">
-        <div class="container mb-0">
+    <div class="content pt-md-5 px-md-5 pt-3 px-3">
+        <div class="container-md">
             <div class="alert alert-success alert-dismissible fade show" role="alert">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                 <h3 class="alert-heading">Hello viewer,</h3>
                 <p>Welcome to my page, Check out my <a href="#" class="alert-link">Projects</a> .</p>
             </div>
-            <p class="text-justify lead">Hi, My name is Ajan Jairam N. I'm currently pursuing my B.E. in chennai. I'm from Kanyakumari district, where i completed my schoolings with good academic results. My hobbies are playing cricket, learning programming languages, watching movies, etc. I have some programming knowledge in python and C++. I can build programs in python and C++. I also know HTML and CSS. I build this website from scratch using HTML and CSS. I have provided my academic details below. Also you can download my resume from top of the page.</p>
+            <p class="text-justify lead">Hi, My name is Ajan Jairam N. I'm currently pursuing my Bachelor's degree in Panimalar Engineering College, chennai. I'm from Kanyakumari district, where i completed my schoolings with good academic results. My hobbies are playing cricket, learning programming languages, watching movies, etc. I have some programming knowledge in Python and C++. I can build programs in Python. I also know HTML and CSS. I build this website from scratch using HTML5 and <a href="https://getbootstrap.com/" class="text-reset">Bootstrap</a>. I have provided my academic details below. Also you can download my resume from top of the page.</p>
             <h3>Educational Qualifications:</h3>
-            <div class="progress mt-3 mb-4" style="height: 30px;">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success font-weight-bold" role="progressbar" style="width: 90%">Class X - 90%</div>
+            <div class="progress mt-3 mb-4 bg-dark" style="height: 30px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success fw-bold" role="progressbar" style="width: 90%">Class X - 90%</div>
             </div>
-            <div class="progress my-4" style="height: 30px;">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info font-weight-bold" role="progressbar" style="width: 92%">Class XII - 92%</div>
+            <div class="progress my-4 bg-dark" style="height: 30px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info fw-bold" role="progressbar" style="width: 92%">Class XII - 92%</div>
             </div>
+            <div class="progress my-4 bg-dark" style="height: 30px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated fw-bold " role="progressbar" style="width: 78%">B.E. - 78%</div>
+            </div>
+            <h3>Programming Languages:</h3>
             <div class="progress my-4" style="height: 30px;">
-                <div class="progress-bar progress-bar-striped progress-bar-animated font-weight-bold" role="progressbar" style="width: 78%">B.E. - 78%</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary fw-bold" role="progressbar" style="width: 40%">Python</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning fw-bold" role="progressbar" style="width: 30%">HTML & CSS</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info fw-bold" role="progressbar" style="width: 15%">C++</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger fw-bold" role="progressbar" style="width: 10%">Java</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info fw-bold" role="progressbar" style="width: 5%">C</div>
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <footer class="container">
+        <p class="text-center">&copy;2021 All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
