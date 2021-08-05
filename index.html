@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajan Jairam - About me</title>
+    <title>About me - Ajan Jairam</title>
     <link rel = "icon" href = "./assets/img/ajr_logo.png" type = "image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -78,13 +78,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
         function updateProgressBar (progress, progressBar, value) {
-            var tempValue = 0;
-            while(Math.round(tempValue) <= value){
-                progress.querySelector(progressBar).style.width = `${tempValue}%`;
-                console.log(tempValue)
-                tempValue += value/10;
-            }
-            tempValue = 0;
+            progress.querySelector(progressBar).style.width = `${value}%`;
         }
         const pBar1 = document.querySelector("#animatedProgress1");
         updateProgressBar(pBar1, "#animatedProgressBar1", 90);
